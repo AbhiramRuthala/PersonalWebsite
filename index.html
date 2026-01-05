@@ -6,25 +6,43 @@
         <head>
 
             <p>
-                <b style="background-color: paleturquoise;">
-                Abhiram Ruthala
-                </b>
-                <u>
-                    <!--Figure out how to do spacing on the hyperlinks. Site looks workable tho!-->
                 
-                    <a class="newHover" href="projects.html">Projects</a>
+                <div class="contains">
+                    <div class="growth">
+                        Abhiram Ruthala
+                    </div>
+                    <ul class="links">
+                        <!--Figure out how to do spacing on the hyperlinks. Site looks workable tho!-->
                     
-                    
-                    <a class="newHover" href="https://substack.com/@abhiram12?">My Notes</a>
-                    
-                    <a class="newHover" href="https://github.com/AbhiramRuthala">GitHub</a>
-                </u>
+                        <li><a class="newHover" href="projects.html">Projects</a></li>
+                        
+                        
+                        <li><a class="newHover" href="https://substack.com/@abhiram12?">My Notes</a></li>
+                        
+                        <li><a class="newHover" href="https://github.com/AbhiramRuthala">GitHub</a></li>
+                    </ul>
+                </div>
 
             </p>
             
         </head>
     </header>
     <style>
+        .growth {
+            background-color: linear-gradient(135deg,blue, lightgreen);
+           
+        }
+        .contains {
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        .links {
+            gap: 2.5rem;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
@@ -41,6 +59,9 @@
         p:hover{
             transform: scale(1.01);
             transition-duration: 0.3s;
+        }
+        html {
+            scroll-behavior: smooth;
         }
 
         a:hover {
