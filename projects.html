@@ -5,28 +5,44 @@
             Projects
         </title>
         <head>
-            <p>
-                <b style="background-color: paleturquoise;">
+            <div class="sense">
+                <b class="growth">
                 Abhiram Ruthala
                 </b>
-                <u>
+                <ul class="links">
                     <!--Figure out how to do spacing on the hyperlinks. Site looks workable tho!-->
 
-                    <a href="index.html">Home</a>
+                    <li><a href="index.html">Home</a></li>
                 
-                    <a href="projects.html">Projects</a>
-                    
-                    
-                    <a href="https://substack.com/@abhiram12?">My Notes</a>
-                    
-                    <a href="https://github.com/AbhiramRuthala">GitHub</a>
-                </u>
+                    <!--Can remove projects - This is your call.-->
 
-            </p>
+                    <li><a href="projects.html">Projects</a></li>
+                    
+                    
+                    <li><a href="https://substack.com/@abhiram12?">My Notes</a></li>
+                    
+                    <li><a href="https://github.com/AbhiramRuthala">GitHub</a></li>
+                </ul>
+
+            </div>
         </head>
 
     </header>
     <style>
+        .growth {
+            background-color: transparent;
+
+        }
+        .sense {
+            display: flex;
+            align-items: center;
+        }
+        .links {
+            gap: 2.5rem;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -48,6 +64,9 @@
         a:hover {
             color: #418aff;
             transition-duration: 0.3s;
+        }
+        .faq-logic {
+            padding: 6rem 2rem;
         }
         
        
@@ -74,7 +93,7 @@
         <p><b>Stability - Mood Tracker</b>: Leveraging Face Images to Improve Mental Health Outcomes. </p><p><i style="background-color: peachpuff;">(July 2024 - June 2025)</i></p>
         <p>July 28th, 2024. 11:03 am.</p>
         <p>I'm walking around in my room, my mind permutating endlessly. What if...? Why not...? Neurotech? Projects? It covered different aspects... until it landed on one beautiful thought.</p>
-        <p>Why can't your phone, that uses Face-ID, also read your mood as well?</p>
+        <p><i>Why can't your phone, that uses Face-ID, also read your mood as well?</i></p>
         <p>That marked the start of almost a year-long project working to shift the frontier of mental health, leveraging AI, Swift, and photo analysis to improve mental health outcomes on electronic devices.</p>
         <a href="https://apps.apple.com/us/app/stability-moodtracker/id6739185313">Check it out on the App Store!</a>
         <p><b>Currently, we've got 95+ downloads across 12+ countries, and a consensus 5-star rating as well!</b></p>
@@ -113,6 +132,34 @@
          <p>
             Let's connect! -<a href="https://linkedin.com/in/AbhiramRuthala">LinkedIn,</a><a href="https://x.com/abhiram12lac">X</a>
          </p>
+
+
+
+
+
+         <br>
+         <br>
+         <br>
+
+         <section class="faq-logic">
+            <div class="faq-item">
+                <div class="question">
+                    <span>SleepMO</span>
+                </div>
+                <div class="answer">
+                    Here you go.
+                </div>
+            </div>
+            <br>
+            <div class="faq-item">
+                <div class="question">
+                    <span>Stability - MoodTracker</span>
+                </div>
+                <div class="answer">
+                    Here you go.
+                </div>
+            </div>
+        </section>
         
     </body>
 </html>
